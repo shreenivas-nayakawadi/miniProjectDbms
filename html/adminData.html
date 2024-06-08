@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="m-2">
     <!-- navbar component ---------------------------------------------------------------------------------- -->
     <nav
       class="navbar navbar-expand-lg bg-secondary-subtle d-flex justify-content-between"
@@ -87,7 +87,8 @@
       </div>
       <div class="mx-2">
         <input
-        class="rounded " style="padding: 5px;"
+          class="rounded"
+          style="padding: 5px"
           type="text"
           placeholder="last 3 numbers of USN"
           aria-label="Username"
@@ -97,10 +98,19 @@
       <div class="submit mx-2">
         <button type="button" class="btn btn-primary">submit</button>
       </div>
+      <div class="submit mx-2">
+        <button type="button" class="btn btn-primary">
+          <a
+            href="/html/alltogether.html"
+            class="text-decoration-none text-bg-primary"
+            >All Together</a
+          >
+        </button>
+      </div>
     </div>
     <!-- drop component ---------------------------------------------------------------------------------- -->
     <!-- table component ---------------------------------------------------------------------------------- -->
-    <table class="table table-striped-columns ">
+    <table class="table table-striped-columns my-3">
       <tr>
         <th>USN</th>
         <th>Year</th>
