@@ -12,6 +12,9 @@
          crossorigin="anonymous"
          />
          <style>
+            .size{
+               width: 200px;
+            }
             .box:hover{
                cursor: pointer;
                background-color: #EEF7FF;
@@ -24,7 +27,7 @@
               flex-direction: column;
             }
         }
-            @media only screen and (max-width: 480px) {
+            @media only screen and (max-width: 500px) {
             .size{
                 width: 100px;
             }
@@ -79,8 +82,8 @@
          <h6 class="text-center my-2">NOTE: please fill the data correctly as per our requirement</h6>
          <div class="student-details">
             <div id="USN">
-               <label class="fw-bold size" for="USN" ">USN:</label>
-               <input type="TEXT" placeholder=" last 3 digits of USN only" name="USN" style="width: 200px; margin-left: 116px; padding: 0px;" class="mt-2"/>
+               <label class="fw-bold " for="USN" ">USN:</label>
+               <input type="TEXT" placeholder=" last 3 digits of USN only" name="USN" style=" margin-left: 116px; padding: 0px;" class="mt-2 size"/>
             </div>
             <label class="fw-bold" for="year">Academic Year:</label>
             <select name="year" id="year" style="margin-left: 38px;" class="mt-2">
@@ -103,7 +106,7 @@
             </select>
             <br />
             <label class="fw-bold" for="date">Date of Feedback:</label>
-            <input type="date" id="date" name="date" style="margin-left: 17px;" class="mt-2"/>
+            <input type="date" id="date" name="date" style="margin-left: 17px;" class="mt-2 size"/>
             <br />
             <label class="fw-bold" for="branch">Branch:</label>
             <select name="branch" id="branch" style="margin-left: 96px;" class="mt-2">
@@ -119,7 +122,7 @@
             </select>
             <br />
             <label class="fw-bold" for="subject">Subject:</label>
-            <select name="subject" id="subject" style="margin-left: 92px; width: 200px;" class=" size my-2">
+            <select name="subject" id="subject" style="margin-left: 92px;" class=" size my-2">
                <option value="DBMS">Database Managemet System</option>
                <option value="CO/CA">Computer Organization / Computer Architecture</option>
                <option value="DAA">Design And Analysis of Algorithms</option>
@@ -341,7 +344,7 @@
             <br /><br />
             <!-- Question 5 -->
             <h4 class="fw-bold">5) Any Remarks</h4>
-            <textarea id=""remark" name="remarks" rows="5"></textarea>
+            <textarea id=""remark" name="remarks" rows="5" cols="100"></textarea>
             <br /><br />
          </div>
       </div>
