@@ -19,7 +19,7 @@
 
 <body class="m-2">
     <!-- navbar component ---------------------------------------------------------------------------------- -->
-    <nav class="navbar navbar-expand-lg bg-secondary-subtle d-flex justify-content-between">
+    <nav class="navbar navbar-expand-lg bg-secondary-subtle d-flex justify-content-between p-2 rounded">
         <div>
             <form action="php/home.php">
                 <form action="php/home.php">

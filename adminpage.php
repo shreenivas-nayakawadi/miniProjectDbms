@@ -12,7 +12,7 @@
 
 <body class="m-2 font-monospace">
     <!-- navbar component ---------------------------------------------------------------------------------- -->
-    <nav class="p-2 navbar navbar-expand-lg bg-secondary-subtle d-flex justify-content-between rounded">
+    <nav class="p-2 navbar navbar-expand-lg bg-secondary-subtle d-flex justify-content-between p-2 rounded">
         <div>
             <form action="">
                 <div class="admin-login">
@@ -53,7 +53,7 @@
                         disabled />
                 </div>
             </form>
-            <form action="php/altogether.php">
+            <form action="php/alltogether.php">
                 <div class="admin-login">
                     <input type="submit" class="btn btn-primary" style="width: 150px" name="alltogether"
                         value="All together" id="alltogether" />
@@ -64,35 +64,33 @@
 
     <hr />
     <div class="container mx-auto my-3 bg-dark-subtle p-4 rounded">
-        <form action="php/subject.php">
+        <form action="subject.php" method="post">
             <legend class="fw-bold">Segregate Based on Subject</legend>
             <div class="mb-3">
                 <label for="branch" class="form-label">Select Branch</label>
-                <select id="branch" class="form-select">
+                <select id="branch" name="branch" class="form-select">
                     <option value="CSE">CSE</option>
                     <option value="ISE">ISE</option>
                 </select>
             </div>
             <div class="mb-3">
                 <label for="sem" class="form-label">Select Semester</label>
-                <select id="sem" class="form-select">
-                    <option value="1st">Sem 1</option>
-                    <option value="2nd">Sem 2</option>
-                    <option value="3rd">Sem 3</option>
-                    <option value="4th">Sem 4</option>
-                    <option value="5th">Sem 5</option>
-                    <option value="6th">Sem 6</option>
-                    <option value="7th">Sem 7</option>
-                    <option value="8th">Sem 8</option>
+                <select id="sem" name="sem" class="form-select">
+                    <option value="1">Sem 1</option>
+                    <option value="2">Sem 2</option>
+                    <option value="3">Sem 3</option>
+                    <option value="4">Sem 4</option>
+                    <option value="5">Sem 5</option>
+                    <option value="6">Sem 6</option>
+                    <option value="7">Sem 7</option>
+                    <option value="8">Sem 8</option>
                 </select>
             </div>
             <div class="mb-3">
                 <label for="subject" class="form-label">Select Subject</label>
-                <select id="subject" class="form-select">
-                    <option value="DBMS">Database Managemet System</option>
-                    <option value="CO/CA">
-                        Computer Organization / Computer Architecture
-                    </option>
+                <select id="subject" name="subject" class="form-select">
+                    <option value="DBMS">Database Management System</option>
+                    <option value="CO/CA">Computer Organization / Computer Architecture</option>
                     <option value="DAA">Design And Analysis of Algorithms</option>
                     <option value="JAVA">Advanced Java</option>
                 </select>
@@ -102,37 +100,39 @@
             </div>
         </form>
     </div>
+
     <hr />
     <div class="container mx-auto my-3 bg-dark-subtle p-4 rounded">
-        <form action="php/USN.php">
+        <form action="USN.php" method="POST">
             <legend class="fw-bold">Segregate Based on USN</legend>
             <div class="mb-3">
                 <label for="USN" class="form-label">Usn</label>
-                <input type="text" id="USN" class="form-control" placeholder="Enter last three digits of USN only" />
+                <input type="text" id="USN" name="USN" class="form-control"
+                    placeholder="Enter last three digits of USN only" />
             </div>
             <div class="mb-3">
                 <label for="branch" class="form-label">Select Branch</label>
-                <select id="branch" class="form-select">
+                <select id="branch" name="branch" class="form-select">
                     <option value="CSE">CSE</option>
                     <option value="ISE">ISE</option>
                 </select>
             </div>
             <div class="mb-3">
                 <label for="sem" class="form-label">Select Semester</label>
-                <select id="sem" class="form-select">
-                    <option value="1st">Sem 1</option>
-                    <option value="2nd">Sem 2</option>
-                    <option value="3rd">Sem 3</option>
-                    <option value="4th">Sem 4</option>
-                    <option value="5th">Sem 5</option>
-                    <option value="6th">Sem 6</option>
-                    <option value="7th">Sem 7</option>
-                    <option value="8th">Sem 8</option>
+                <select id="sem" name="sem" class="form-select">
+                    <option value="1">Sem 1</option>
+                    <option value="2">Sem 2</option>
+                    <option value="3">Sem 3</option>
+                    <option value="4">Sem 4</option>
+                    <option value="5">Sem 5</option>
+                    <option value="6">Sem 6</option>
+                    <option value="7">Sem 7</option>
+                    <option value="8">Sem 8</option>
                 </select>
             </div>
             <div class="mb-3">
                 <label for="section" class="form-label">Section</label>
-                <select id="section" class="form-select">
+                <select id="section" name="section" class="form-select">
                     <option value="A">Sec A</option>
                     <option value="B">Sec B</option>
                     <option value="C">Sec C</option>
@@ -143,33 +143,34 @@
             </div>
         </form>
     </div>
+
     <hr />
     <div class="container mx-auto my-3 bg-dark-subtle p-4 rounded">
-        <form action="section.php">
+        <form action="section.php" method="post">
             <legend class="fw-bold">Segregate Based on Section</legend>
             <div class="mb-3">
                 <label for="branch" class="form-label">Select Branch</label>
-                <select id="branch" class="form-select">
+                <select id="branch" name="branch" class="form-select">
                     <option value="CSE">CSE</option>
                     <option value="ISE">ISE</option>
                 </select>
             </div>
             <div class="mb-3">
                 <label for="sem" class="form-label">Select Semester</label>
-                <select id="sem" class="form-select">
-                    <option value="1st">Sem 1</option>
-                    <option value="2nd">Sem 2</option>
-                    <option value="3rd">Sem 3</option>
-                    <option value="4th">Sem 4</option>
-                    <option value="5th">Sem 5</option>
-                    <option value="6th">Sem 6</option>
-                    <option value="7th">Sem 7</option>
-                    <option value="8th">Sem 8</option>
+                <select id="sem" name="sem" class="form-select">
+                    <option value="1">Sem 1</option>
+                    <option value="2">Sem 2</option>
+                    <option value="3">Sem 3</option>
+                    <option value="4">Sem 4</option>
+                    <option value="5">Sem 5</option>
+                    <option value="6">Sem 6</option>
+                    <option value="7">Sem 7</option>
+                    <option value="8">Sem 8</option>
                 </select>
             </div>
             <div class="mb-3">
                 <label for="section" class="form-label">Section</label>
-                <select id="section" class="form-select">
+                <select id="section" name="section" class="form-select">
                     <option value="A">Sec A</option>
                     <option value="B">Sec B</option>
                     <option value="C">Sec C</option>
@@ -180,6 +181,7 @@
             </div>
         </form>
     </div>
+
 
     <br />
     <!-- navbar component ---------------------------------------------------------------------------------- -->

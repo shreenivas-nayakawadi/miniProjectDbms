@@ -13,12 +13,15 @@
         width: 200px;
     }
 
-    .box:hover {
+
+
+    wi .box:hover {
         cursor: pointer;
         background-color: #EEF7FF;
         box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 1);
         -webkit-box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 1);
         -moz-box-shadow: 0px 3px 24px 0px rgba(0, 0, 0, 1);
+        text-color: black;
     }
 
     @media only screen and (max-width: 600px) {
@@ -37,7 +40,7 @@
 
 <body class="m-1">
     <!-- navbar component ---------------------------------------------------------------------------------- -->
-    <nav class="navbar navbar-expand-lg bg-secondary-subtle d-flex justify-content-between">
+    <nav class="navbar navbar-expand-lg bg-secondary-subtle d-flex justify-content-between p-2 rounded">
         <div>
             <form action="php/home.php">
                 <div class="admin-login">
@@ -99,14 +102,14 @@
                 <br />
                 <label class="fw-bold" for="sem">Semester:</label>
                 <select name="sem" id="sem" style="margin-left: 78px;" class="mt-2">
-                    <option value="1st">Sem 1</option>
-                    <option value="2nd">Sem 2</option>
-                    <option value="3rd">Sem 3</option>
-                    <option value="4th">Sem 4</option>
-                    <option value="5th">Sem 5</option>
-                    <option value="6th">Sem 6</option>
-                    <option value="7th">Sem 7</option>
-                    <option value="8th">Sem 8</option>
+                    <option value="1">Sem 1</option>
+                    <option value="2">Sem 2</option>
+                    <option value="3">Sem 3</option>
+                    <option value="4">Sem 4</option>
+                    <option value="5">Sem 5</option>
+                    <option value="6">Sem 6</option>
+                    <option value="7">Sem 7</option>
+                    <option value="8">Sem 8</option>
                 </select>
                 <br />
                 <label class="fw-bold" for="date">Date of Feedback:</label>
@@ -144,23 +147,23 @@
                 University?
             </h4>
             <div class="container responsive  d-flex justify-content-around">
-                <label class="my-2  box border border-white border-2 rounded p-1">
+                <label class="my-2  box border border-white border-2 rounded p-1 ">
                     <input type="radio" id="ques-1-5" class="sucess" name="ques1" value="5" />
                     5- Excellent
                 </label>
-                <label class="my-2  box  border border-white border-2 rounded p-1">
+                <label class="my-2  box  border border-white border-2 rounded p-1 ">
                     <input type="radio" id="ques-1-4" class="primary" name="ques1" value="4" />
                     4- Very Good
                 </label>
-                <label class="my-2  box  border border-white border-2 rounded p-1">
+                <label class="my-2  box  border border-white border-2 rounded p-1 ">
                     <input type="radio" id="ques-1-3" class="info" class="warning" name="ques1" value="3" />
                     3- Good
                 </label>
-                <label class="my-2  box  border border-white border-2 rounded p-1">
+                <label class="my-2  box  border border-white border-2 rounded p-1 ">
                     <input type="radio" id="ques-1-2" class="warning" name="ques1" value="2" />
                     2- Average
                 </label>
-                <label class="my-2  box  border border-white border-2 rounded p-1">
+                <label class="my-2  box  border border-white border-2 rounded p-1 ">
                     <input type="radio" id="ques-1-1" class="danger" name="ques1" value="1" />
                     1- Below Average
                 </label>

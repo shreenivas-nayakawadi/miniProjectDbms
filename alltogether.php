@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Page</title>
+    <title>All Together</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
@@ -12,7 +12,7 @@
 
 <body class="m-2">
     <!-- navbar component ---------------------------------------------------------------------------------- -->
-    <nav class="navbar navbar-expand-lg bg-secondary-subtle d-flex justify-content-between">
+    <nav class="navbar navbar-expand-lg bg-secondary-subtle d-flex justify-content-between p-2 rounded">
         <div>
             <form action="">
                 <div class="admin-login">
@@ -68,8 +68,8 @@
     session_start();
     require 'php/config.php';
 
-    if (isset($_SESSION['login_user'])) {
-      $userLoggedIn = $_SESSION['login_user'];
+    // if (isset($_SESSION['login_user'])) {
+    //   $userLoggedIn = $_SESSION['login_user'];
       $result = mysqli_query($con,"SELECT * FROM feedback");
 
       echo "<table border='1' class='table table-striped-columns my-3' id='students-table'>
@@ -114,10 +114,12 @@
       }
 
       echo "</table>";                                                                    
-    }
-    else {
-      //header("Location: index.php");
-    }
+      echo "<br>";                                                                    
+      echo "<hr>";                                                                    
+    // }
+    // else {
+    //   //header("Location: index.php");
+    // }
   ?>
     <!-- table component ---------------------------------------------------------------------------------- -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
